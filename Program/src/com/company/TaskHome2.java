@@ -22,8 +22,8 @@ public class TaskHome2 {
     public static void main (String [] args) throws FileNotFoundException {
         System.out.println("Start programu.");
         /**Plik musi się znajdować w głównym folderze programu w moim przypadku jest to (...)/Java/Program/TaskHome2.txt*/
-        System.out.println("Wpisz nazwę pliku, który chcesz wczytać do programu " +
-                "(pamiętaj aby znajdował się w głównym folderze programu):");
+        System.out.println("Wpisz nazwe pliku, ktory chcesz wczytac do programu " +
+                "(pamietaj aby znajdowal sie w głownym folderze programu):");
         Scanner tekst = new Scanner(System.in);
         String t = tekst.next();
         tekst.close();
@@ -33,10 +33,10 @@ public class TaskHome2 {
         znaki[0] = ileznakow(file);
         znaki[1] = biale(file);
         znaki[2] = slowa(file);
-        System.out.println("W załadowanym pliku " + file + " jest:");
-        System.out.println(znaki[0] + " znaków.");
-        System.out.println(znaki[1] + " znaków białych.");
-        System.out.println("A ilość słów wynosi: " + znaki[2]);
+        System.out.println("W zaladowanym pliku " + file + " jest:");
+        System.out.println(znaki[0] + " znakow.");
+        System.out.println(znaki[1] + " znakow bialych.");
+        System.out.println("A ilosc słow wynosi: " + znaki[2]);
         System.out.println("Koniec programu.");
     }
     public static int slowa(String plik) throws FileNotFoundException {
