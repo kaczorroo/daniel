@@ -36,7 +36,7 @@ import java.util.Scanner;
             return n;
         }
         else
-            return firytacja(n - 2) + firytacja(n - 1);
+            return frekurencja(n - 2) + frekurencja(n - 1);
     }
     public static long firytacja(long n){
         if(n==0) return 0;
