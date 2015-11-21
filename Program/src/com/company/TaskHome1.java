@@ -12,23 +12,23 @@ import java.util.Scanner;
     public static void main(String [] args){
         Scanner wpisz = new Scanner(System.in);
         System.out.println("Start programu.");
-        System.out.println("Podaj, który wyraz ciągu Fibonacciego chcesz uzyskać.");
+        System.out.println("Podaj, ktory wyraz ciagu Fibonacciego chcesz uzyskac.");
         int i = wpisz.nextInt();
         wpisz.close();
 
         if(i<=45) {
-            System.out.print(i + " wyraz ciągu Fibonacci'ego obliczony metodą Iteracyjną wynosi: ");
+            System.out.print(i + " wyraz ciagu Fibonacci'ego obliczony metoda Iteracyjna wynosi: ");
             System.out.println(firytacja(i));
         }
         else
-            System.out.println("Zbyt długi czas obliczania ciągu!");
+            System.out.println("Zbyt dlugi czas obliczania ciagu!");
 
         if(i<=45){
-            System.out.print(i + " wyraz ciągu Fibonacci'ego obliczony metodą Rekurencyjną wynosi: ");
+            System.out.print(i + " wyraz ciagu Fibonacci'ego obliczony metoda Rekurencyjna wynosi: ");
             System.out.println(frekurencja(i));
         }
         else
-            System.out.println("Zbyt długi czas obliczania ciągu!");
+            System.out.println("Zbyt dlugi czas obliczania ciagu!");
         System.out.println("Koniec programu!");
     }
     public static long frekurencja(long n){
